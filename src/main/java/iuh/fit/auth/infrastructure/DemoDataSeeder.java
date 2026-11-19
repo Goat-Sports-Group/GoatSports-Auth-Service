@@ -68,6 +68,11 @@ public class DemoDataSeeder implements CommandLineRunner {
     }
 
     private static final List<UserSeed> USERS = List.of(
+            // --- Quản trị viên kiểm duyệt (id tất định: social-service ghi đúng người xử lý báo cáo mẫu) ---
+            new UserSeed(RoleEnum.ADMIN, "kiemduyet", "Lâm Thanh Tâm",
+                    "kiemduyet@goatsports.vn", "0908462913",
+                    LocalDate.of(1992, 3, 15), GenderEnum.FEMALE, "Hồ Chí Minh"),
+
             // --- Chủ sân ---
             new UserSeed(RoleEnum.VENUE_OWNER, "baotq", "Trần Quốc Bảo",
                     "bao.tranquoc@goatsports.vn", "0903812447",
